@@ -10,21 +10,59 @@
 </head>
 
 <body>
-   <header>
-      <nav class="navbar">
+   <header class="header">
+      <h1 class="nom_canal">#Nombre_canal</h1>
+      <nav class="navbar"> <!-- active -->
          <a href="prueba.html" class="logo_menu">
             <img src="../assets/menu.png" alt="Menu">
          </a>
-         <p class="nom_canal">
-            # Nombre_canal
-         </p>
+         <div class="servidores">
+            <ul class="servidores_lista">
+               <li><a href="#canal"><img src="../assets/servidor-de-alojamiento.png" alt="servidor"></a>
+               <p>Servidor patito</p></li>
+               <li><a href="#canal"><img src="../assets/servidor-de-alojamiento.png" alt="servidor"></a>
+                  <p>Servidor patito</p></li>
+            </ul>
+         </div>
          <!-- ul>li*4>a esto te sirve para agregar boludeces al nav -->
       </nav>
    </header>
    <main>
       <section class="vista_principal">
          <div id="centro_mensajes">
-
+            <!-- ARMAR ESTO DESDE JS -->
+            <div class="mensaje">
+               <figure class="mensaje_img"><img src="../assets/avatar.jpg" alt="avatar_luis"></figure>
+               <div class="mensaje_info">
+                  <header>
+                     <h3 class="nombre"><strong>Luis Vera</strong></h3>
+                     <span class="fecha">17:56</span>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ea inventore cumque, libero minus consequuntur voluptate mollitia corrupti dolor dignissimos ipsam perspiciatis qui aliquam asperiores rem alias? Mollitia, earum ut.</p>
+               </div>
+            </div>
+            <div class="mensaje">
+               <figure class="mensaje_img"><img src="../assets/avatar.jpg" alt="avatar_luis"></figure>
+               <div class="mensaje_info">
+                  <header>
+                     <h3 class="nombre"><strong>Luis Vera</strong></h3>
+                     <span class="fecha">17:56</span>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ea inventore cumque, libero minus consequuntur voluptate mollitia corrupti dolor dignissimos ipsam perspiciatis qui aliquam asperiores rem alias? Mollitia, earum ut.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, sapiente deleniti ullam ut ipsam enim beatae voluptatem necessitatibus debitis impedit nisi ipsa esse maiores saepe iste aperiam, sed praesentium ex!
+                  </p>
+               </div>
+            </div>
+            <div class="mensaje">
+               <figure class="mensaje_img"><img src="../assets/avatar.jpg" alt="avatar_luis"></figure>
+               <div class="mensaje_info">
+                  <header>
+                     <h3 class="nombre"><strong>Luis Vera</strong></h3>
+                     <span class="fecha">17:56</span>
+                  </header>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+               </div>
+            </div>
          </div>
          <div class="inferior">
             <form>
@@ -33,7 +71,6 @@
                   <img src="../assets/enviar-mensaje.png" alt="enviar">
                </button>
             </form>
-
          </div>
       </section>
    </main>
