@@ -1,4 +1,4 @@
-/* // URL de la API que deseas consultar
+// URL de la API que deseas consultar
 const apiUrl = 'http://127.0.0.1:5000/get_messages/1';
 
 const CampoMensaje = document.getElementById('centro_mensajes');
@@ -20,4 +20,3 @@ fetch(apiUrl)
   .catch(error => {
     console.error('Error:', error);
   });
- */
