@@ -1,0 +1,29 @@
+/* Estilo para el contenedor de las listas */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px; /* Espacio entre las listas */
+    justify-content: space-between; /* Alinea las listas al comienzo y al final del contenedor */
+}
+
+/* Estilo para las listas de servidores, datos adicionales y mensajes */
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+/* Estilo para los elementos de lista */
+li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Estilo para los títulos de las listas */
+.list-title {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
