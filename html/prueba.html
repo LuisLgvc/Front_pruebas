@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +17,7 @@
 
         <div class="list">
             <h2 class="list-title">CANALES</h2>
-            <ul id="additional-data-list">
+            <ul id="channels-list">
                 <!-- Los elementos <li> de datos adicionales se agregarán aquí -->
             </ul>
         </div>
@@ -30,6 +30,16 @@
         </div>
     </div>
 
-    <script src="../scripts/scripts.js"></script>
+    <div id="servidores">
+        <ul class="lista_servidores"></ul>
+    </div>
+
+    <!-- <script src="../scripts/scripts.js"></script> -->
+    <script src="../scripts/servers.js"></script>
+    <script src="../scripts/channels.js"></script>
+    <script src="../scripts/messages.js"></script>
+    <script>
+        obtenerServidores();
+    </script>
 </body>
 </html>
