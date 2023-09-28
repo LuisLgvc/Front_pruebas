@@ -13,7 +13,23 @@
             <ul id="server-list">
                 <!-- Los elementos <li> se agregarán dinámicamente aquí -->
             </ul>
+            <button id="btn-abrir-popup" class="btn-abrir-popup">Crear</button>
         </div>
+
+        <div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><img src="../assets/cancelar.png" alt="salir"></a>
+				<h3>Nuevo servidor</h3>
+				<form action="" id="form_crear_server">
+					<div class="contenedor-inputs">
+						<input type="text" placeholder="Nombre" id="nombre_servidor">
+					</div>
+					<input type="submit" class="btn-submit" value="Crear servidor">
+				</form>
+			</div>
+		</div>
+
+
 
         <div class="list">
             <h2 class="list-title">CANALES</h2>
@@ -21,6 +37,22 @@
                 <!-- Los elementos <li> de datos adicionales se agregarán aquí -->
             </ul>
         </div>
+
+        <div class="overlayY" id="overlayY">
+			<div class="popupC" id="popupC">
+				<a href="#" id="btn-cerrar-popupA" class="btn-cerrar-popupA"><img src="../assets/cancelar.png" alt="salir"></a>
+				<h3>Nuevo canal</h3>
+				<form action="" id="form_crear_canal">
+                    <div class="contenedor-inputs">
+                        <input type="text" placeholder="Nombre" id="nombre_canal">
+                    </div>
+                    <input type="submit" class="btn-submit" value="Crear Canal">
+                </form>
+			</div>
+		</div>
+
+
+
 
         <div class="list">
             <h2 class="list-title">MENSAJES</h2>
@@ -35,11 +67,25 @@
     </div>
 
     <!-- <script src="../scripts/scripts.js"></script> -->
+    <script src="../scripts/popup_crear_server.js"></script>
+
+    <script src="../scripts/popup_crear_canal.js"></script>
+
     <script src="../scripts/servers.js"></script>
     <script src="../scripts/channels.js"></script>
     <script src="../scripts/messages.js"></script>
     <script>
         obtenerServidores();
+        document.getElementById("form_crear_server").addEventListener("submit", function (event) {
+            event.preventDefault();
+            obtenerContenidoNombre();
+        });
+
+        document.getElementById("form_crear_canal").addEventListener("submit", function (event) {
+            event.preventDefault();
+            crearCanal();
+        });
+
     </script>
 </body>
 </html>
